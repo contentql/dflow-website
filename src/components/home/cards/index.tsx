@@ -116,6 +116,11 @@ export function GridPattern({
 }: GridPatternProps) {
   const patternId = useId()
 
+  // Ensure uniqueness of square coordinates
+  const uniqueSquares = Array.from(
+    new Set(squares.map(([sx, sy]) => `${sx}-${sy}`))
+  ).map((key) => key.split('-').map(Number) as [number, number])
+
   return (
     <svg aria-hidden='true' {...props}>
       <defs>
@@ -136,9 +141,9 @@ export function GridPattern({
         strokeWidth={0}
         fill={`url(#${patternId})`}
       />
-      {squares.length > 0 && (
+      {uniqueSquares.length > 0 && (
         <svg x={x} y={y} className='overflow-visible'>
-          {squares.map(([squareX, squareY]) => (
+          {uniqueSquares.map(([squareX, squareY]) => (
             <rect
               strokeWidth='0'
               key={`${squareX}-${squareY}`}
@@ -153,3 +158,4 @@ export function GridPattern({
     </svg>
   )
 }
+
