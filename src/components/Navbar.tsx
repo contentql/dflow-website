@@ -4,7 +4,9 @@ import React, { useState } from 'react'
 
 import { cn } from '@/utils/util'
 
-import { HoveredLink, Menu, MenuItem, ProductItem } from './NavbarMenu'
+import { HoveredLink, Menu, MenuItem } from './NavbarMenu'
+// import { HoveredLink, Menu, MenuItem, ProductItem } from './NavbarMenu'
+import Link from 'next/link'
 
 export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null)
@@ -12,8 +14,17 @@ export function Navbar({ className }: { className?: string }) {
     <div
       className={cn('fixed inset-x-0 z-50 mx-auto max-w-7xl pt-5', className)}
     >
-      <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item='Services'>
+      <Menu  setActive={setActive}>
+        <Link href={'/'} className='hover:text-primary'>Docs</Link>
+      
+        <MenuItem setActive={setActive} active={active} item='Resources'>
+          <div className='flex flex-col space-y-4 text-sm'>
+            <HoveredLink href='/changelog'>Changelog</HoveredLink>
+            <HoveredLink href='/about'>About</HoveredLink>
+          </div>
+        </MenuItem>
+
+        {/* <MenuItem setActive={setActive} active={active} item='Resources'>
           <div className='flex flex-col space-y-4 text-sm'>
             <HoveredLink href='/web-dev'>Web Development</HoveredLink>
             <HoveredLink href='/interface-design'>Interface Design</HoveredLink>
@@ -56,7 +67,7 @@ export function Navbar({ className }: { className?: string }) {
             <HoveredLink href='/team'>Team</HoveredLink>
             <HoveredLink href='/enterprise'>Enterprise</HoveredLink>
           </div>
-        </MenuItem>
+        </MenuItem> */}
       </Menu>
     </div>
   )

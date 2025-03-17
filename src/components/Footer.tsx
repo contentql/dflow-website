@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className='mx-auto max-w-7xl py-6'>
       <div className='container mx-auto flex flex-col items-center justify-between px-6 md:flex-row'>
         <p className='text-sm'>
-          &copy; {new Date().getFullYear()} DokFlow. All rights reserved.
+          &copy; 2025 DokFlow. All rights reserved.
         </p>
         <nav className='mt-2 flex space-x-4 md:mt-0'>
           <a href='/privacy' className='hover:text-primary'>

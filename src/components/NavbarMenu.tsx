@@ -76,10 +76,10 @@ export const Menu = ({
       onMouseLeave={() => setActive(null)}
       className='relative flex items-center justify-center rounded-md border border-border bg-background px-8 py-3 shadow-input'
     >
-      <div className='flex items-center gap-2 text-2xl font-semibold'>
+      <Link href={'/'} className='flex items-center gap-2 text-2xl font-semibold'>
         <Workflow className='text-primary' />
         <p>Dflow</p>
-      </div>
+      </Link>
       {/* Centered children */}
       <div className='flex flex-1 justify-center gap-5'>{children}</div>
 
