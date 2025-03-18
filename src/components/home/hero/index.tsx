@@ -1,3 +1,6 @@
+'use client'
+
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 import { Spotlight } from '@/components/SpotLight'
@@ -5,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { cn } from '@/utils/util'
 
 export function HeroSection() {
+  const router = useRouter()
   return (
     <div className='bg-grid-white/[0.02] relative mx-auto flex h-[40rem] max-w-7xl overflow-hidden rounded-md antialiased md:items-center md:justify-center'>
       <Spotlight
@@ -18,8 +22,8 @@ export function HeroSection() {
           '[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]',
         )}
       />
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      
+      <div className='pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
+
       <div className='relative z-10 mx-auto w-full p-4 pt-28'>
         <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Effortless <br /> Deployments in Minutes
@@ -34,6 +38,7 @@ export function HeroSection() {
               Get started
             </Button>
             <Button
+              onClick={() => router.push('https://discord.gg/gKFjGQQQ')}
               variant={'outline'}
               className='hover:bg-card hover:text-foreground'>
               <svg
