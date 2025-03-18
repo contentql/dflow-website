@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 import { useState } from 'react'
 
 import { cn } from '@/utils/util'
+import { useRouter } from 'next/navigation'
 
 type Tab = {
   title: string
@@ -27,6 +28,7 @@ export const Tabs = ({
 }) => {
   const [active, setActive] = useState<Tab>(propTabs[0])
   const [tabs, setTabs] = useState<Tab[]>(propTabs)
+  const router=useRouter()
 
   const moveSelectedTabToTop = (idx: number) => {
     const newTabs = [...propTabs]
@@ -51,6 +53,7 @@ export const Tabs = ({
             key={tab.title}
             onClick={() => {
               moveSelectedTabToTop(idx)
+              router.push('/#tabs')
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
@@ -79,7 +82,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn('mt-32', contentClassName)}
+        className={cn('mt-24', contentClassName)}
       />
     </>
   )
