@@ -17,7 +17,7 @@ export function TabsSection() {
       content: (
         <div className='relative h-full w-full overflow-hidden rounded-md bg-gradient-to-br from-purple-700 to-violet-900 p-10'>
           <p className='text-xl font-bold md:text-4xl'>Servers</p>
-          <p>
+          <p className='text-lg'>
             Easily manage and deploy your servers with scalable infrastructure
             and automated configurations.
           </p>
@@ -31,7 +31,7 @@ export function TabsSection() {
       content: (
         <div className='relative h-full w-full overflow-hidden rounded-md bg-gradient-to-br from-purple-700 to-violet-900 p-10'>
           <p className='text-xl font-bold md:text-4xl'>Databases</p>
-          <p>
+          <p className='text-lg'>
             Deploy, monitor, and optimize databases with seamless integrations
             and high availability.
           </p>
@@ -45,7 +45,7 @@ export function TabsSection() {
       content: (
         <div className='relative h-full w-full overflow-hidden rounded-md bg-gradient-to-br from-purple-700 to-violet-900 p-10'>
           <p className='text-xl font-bold md:text-4xl'>GitHub Deploy</p>
-          <p>
+          <p className='text-lg'>
             Deploy your GitHub applications effortlessly with automated builds
             and CI/CD pipelines.
           </p>
@@ -59,7 +59,7 @@ export function TabsSection() {
       content: (
         <div className='relative h-full w-full overflow-hidden rounded-md bg-gradient-to-br from-purple-700 to-violet-900 p-10'>
           <p className='text-xl font-bold md:text-4xl'>Domains</p>
-          <p>
+          <p className='text-lg'>
             Simplify domain management with DNS configuration, SSL setup, and
             seamless routing.
           </p>
@@ -73,7 +73,7 @@ export function TabsSection() {
       content: (
         <div className='relative h-full w-full overflow-hidden rounded-md bg-gradient-to-br from-purple-700 to-violet-900 p-10'>
           <p className='text-xl font-bold md:text-4xl'>Logs</p>
-          <p>
+          <p className='text-lg'>
             Track real-time logs for deployments, server activities, and
             debugging insights in one place.
           </p>

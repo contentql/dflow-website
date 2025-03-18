@@ -40,7 +40,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
         Stay Up to Date with Dokflow
         </h1>
-        <p className='mx-auto mt-4 max-w-lg text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-lg text-center text-lg text-muted-foreground'>
         Stay informed about the latest updates, new features, performance improvements, and bug fixes in Dokflow. We’re constantly improving to make your deployments seamless!
         </p>
       </div>

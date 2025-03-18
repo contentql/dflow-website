@@ -63,7 +63,7 @@ export default function TestimonialSection() {
                   className='h-10 w-10 rounded-full border border-border'
                 />
                 <div>
-                  <p className='font-semibold'>{testimonial.name}</p>base
+                  <p className='font-semibold text-lg'>{testimonial.name}</p>
                   <p className='text-sm text-muted-foreground'>
                     {testimonial.role}
                   </p>

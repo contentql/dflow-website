@@ -11,7 +11,7 @@ const CtaSection = () => {
       {/* <h2 className="text-4xl font-bold">
         Deploy Smarter with Dokflow
       </h2> */}
-      <p className='max-w-lg text-lg font-medium text-muted-foreground'>
+      <p className='max-w-lg text-lg text-muted-foreground'>
         Effortless, fast, and reliable deployments for modern applications. Get
         started today and streamline your development workflow.
       </p>

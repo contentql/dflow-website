@@ -7,7 +7,7 @@ const AboutHeroSection = () => {
         <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center max-w-5xl mx-auto text-4xl font-bold text-transparent md:text-7xl'>
           Deploy Smarter, Scale Faster
         </h1>
-        <p className='mx-auto mt-4 max-w-2xl text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
           Dokflow simplifies website and application deployment, making it
           seamless, efficient, and scalable. Whether you`&apos;`re launching a startup
           or managing enterprise-level deployments, we provide the tools to

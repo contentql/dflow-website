@@ -28,7 +28,7 @@ export function HeroSection() {
         <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Effortless <br /> Deployments in Minutes
         </h1>
-        <p className='mx-auto mt-4 max-w-lg text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-lg text-center text-lg font-normal text-muted-foreground'>
           Deploy your applications seamlessly with Dokflow. Fast, scalable, and
           developer-friendly.
         </p>

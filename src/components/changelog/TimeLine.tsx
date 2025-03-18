@@ -8,7 +8,7 @@ export function TimelineSection() {
       title: '2025',
       content: (
         <div>
-          <p className='mb-8 font-normal'>
+          <p className='mb-8 text-xl'>
             Built and launched Dokflow, a deployment platform designed to
             simplify and streamline website deployments.
           </p>
@@ -49,11 +49,11 @@ export function TimelineSection() {
       title: 'Early 2024',
       content: (
         <div>
-          <p className='mb-8 font-normal'>
+          <p className='mb-8 text-lg'>
             Started working on Dokflow, focusing on deployment automation,
             integrations, and a seamless user experience.
           </p>
-          <p className='mb-8 font-normal'>
+          <p className='mb-8 text-lg'>
             The platform includes features like one-click deployments, custom
             domains, and real-time status tracking.
           </p>
@@ -94,7 +94,7 @@ export function TimelineSection() {
       title: 'Changelog',
       content: (
         <div>
-          <p className='mb-4 font-normal'>
+          <p className='mb-4 text-lg'>
             Recent updates in Dokflow deployment platform:
           </p>
           <div className='mb-8'>

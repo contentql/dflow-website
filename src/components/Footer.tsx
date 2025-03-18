@@ -6,13 +6,13 @@ export default function Footer() {
           &copy; 2025 DokFlow. All rights reserved.
         </p>
         <nav className='mt-2 flex space-x-4 md:mt-0'>
-          <a href='/privacy' className='hover:text-primary'>
+          <a href='/privacy' className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>
             Privacy Policy
           </a>
-          <a href='/terms' className='hover:text-primary'>
+          <a href='/terms' className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>
             Terms of Service
           </a>
-          <a href='/contact' className='hover:text-primary'>
+          <a href='/contact' className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>
             Contact
           </a>
         </nav>

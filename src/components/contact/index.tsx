@@ -8,7 +8,7 @@ const ContactSection = () => {
         <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Get in Touch with Us
         </h1>
-        <p className='mx-auto mt-4 max-w-2xl text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
           Have questions or need assistance? We&apos;re here to help! Reach out
           to us, and our team will get back to you as soon as possible.
         </p>

@@ -7,7 +7,7 @@ const PrivacyPolicySection = () => {
         <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Privacy Policy
         </h1>
-        <p className='mx-auto mt-4 max-w-2xl text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
           Last updated: March 2025
         </p>
 

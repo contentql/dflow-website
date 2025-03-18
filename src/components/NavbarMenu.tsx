@@ -77,7 +77,7 @@ export const Menu = ({
         href={'/'}
         className='flex items-center gap-2 text-2xl font-semibold'>
         <Workflow className='text-primary' />
-        <p>Dflow</p>
+        <p>Dokflow</p>
       </Link>
       {/* Centered children */}
       <div className='flex flex-1 justify-center gap-5'>{children}</div>

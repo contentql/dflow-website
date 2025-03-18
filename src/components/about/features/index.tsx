@@ -1,6 +1,7 @@
 'use client'
 
 import createGlobe from 'cobe'
+import { Check } from 'lucide-react'
 import React from 'react'
 import { useEffect, useRef } from 'react'
 
@@ -18,11 +19,11 @@ export function AboutFeaturesSection() {
   return (
     <div className='relative z-20 mx-auto max-w-7xl py-20'>
       <div className='px-8'>
-        <h1 className='bg-opacity-50 bg-gradient-to-b max-w-5xl mx-auto from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
+        <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Streamline Your Deployments with Ease
         </h1>
 
-        <p className='mx-auto mt-4 max-w-2xl text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
           Dokflow simplifies the deployment process, making it faster and more
           efficient. Whether you&apos;re using pre-built themes or uploading
           custom ones, our platform ensures smooth, scalable, and hassle-free
@@ -36,18 +37,31 @@ export function AboutFeaturesSection() {
             {/* <FeatureTitle>{feature.title}</FeatureTitle>
             <FeatureDescription>{feature.description}</FeatureDescription> */}
             <div className='w-full'>
-            <div className='inline-flex bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text pb-3 font-medium text-transparent'>Why Choose Dokflow?</div>
-            <ul className='space-y-5 list-disc'>
-              <li >
-                Deploy your projects in just a few clicks with minimal setup.
-              </li>
-              <li>Ensure smooth and reliable performance at any scale.</li>
-              <li>Use organization-provided themes or upload custom ones.</li>
-              <li>
-                Reduce manual effort with streamlined deployment pipelines.
-              </li>
-              <li>Works with your favorite tools and frameworks.</li>
-            </ul>
+              <div className='inline-flex bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text pb-3 font-medium text-transparent'>
+                Why Choose Dokflow?
+              </div>
+              <ul className='space-y-5'>
+                <li className='flex gap-2'>
+                  <Check />
+                  Deploy your projects in just a few clicks with minimal setup.
+                </li>
+                <li className='flex gap-2'>
+                  <Check />
+                  Ensure smooth and reliable performance at any scale.
+                </li>
+                <li className='flex gap-2'>
+                  <Check />
+                  Use organization-provided themes or upload custom ones.
+                </li>
+                <li className='flex gap-2'>
+                  <Check />
+                  Reduce manual effort with streamlined deployment pipelines.
+                </li>
+                <li className='flex gap-2'>
+                  <Check />
+                  Works with your favorite tools and frameworks.
+                </li>
+              </ul>
             </div>
             <div className='h-full w-full'>{feature.skeleton}</div>
           </FeatureCard>
@@ -65,7 +79,7 @@ const FeatureCard = ({
   className?: string
 }) => {
   return (
-    <div className={cn(`relative overflow-hidden p-4 sm:p-8 flex`, className)}>
+    <div className={cn(`relative flex overflow-hidden p-4 sm:p-8`, className)}>
       {children}
     </div>
   )

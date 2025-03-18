@@ -59,8 +59,8 @@ export function FeatureSection() {
             className='relative overflow-hidden rounded-md bg-card p-6'
           >
             <Grid size={20} />
-            <p className='relative z-20 text-base font-bold'>{feature.title}</p>
-            <p className='relative z-20 mt-4 font-normal text-muted-foreground text-neutral-400'>
+            <p className='relative z-20 text-lg font-medium'>{feature.title}</p>
+            <p className='relative z-20 mt-4 text-muted-foreground'>
               {feature.description}
             </p>
           </div>

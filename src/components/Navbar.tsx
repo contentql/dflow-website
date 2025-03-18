@@ -16,9 +16,9 @@ export function Navbar({ className }: { className?: string }) {
   )}
 >
       <Menu  >
-        <Link href={'/'} className='hover:text-primary'>Docs</Link>
-        <Link href={'/changelog'} className='hover:text-primary'>Changelog</Link>
-        <Link href={'/about'} className='hover:text-primary'>About</Link>
+        <Link href={'/'} className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>Docs</Link>
+        <Link href={'/changelog'} className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>Changelog</Link>
+        <Link href={'/about'} className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>About</Link>
 
         {/* <MenuItem setActive={setActive} active={active} item='Resources'>
           <div className='flex flex-col space-y-4 text-sm'>

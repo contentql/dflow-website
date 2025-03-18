@@ -30,17 +30,17 @@ export default function TeamSection() {
         <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Meet Our Team
         </h1>
-        <p className='mx-auto mt-4 max-w-2xl text-center text-base font-normal text-muted-foreground'>
+        <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
           Behind Dokflow is a team of passionate developers, designers, and
           innovators dedicated to simplifying deployments. We believe in
           efficiency, scalability, and seamless workflows—helping you bring your
           projects to life with ease.
         </p>
 
-        <div className='grid grid-cols-2 gap-4 py-20 md:grid-cols-4 justify-items-center'>
-        {members.map((member, index) => (
+        <div className='grid grid-cols-2 justify-items-center gap-4 py-20 md:grid-cols-4'>
+          {members.map((member, index) => (
             <div key={index}>
-              <div className='size-20 rounded-full border bg-background p-0.5 shadow shadow-zinc-950/5'>
+              <div className='size-20 rounded-full border border-border bg-background p-0.5 shadow shadow-zinc-950/5'>
                 <Image
                   className='aspect-square rounded-full object-cover'
                   src={member.avatar}
@@ -50,8 +50,8 @@ export default function TeamSection() {
                   loading='lazy'
                 />
               </div>
-              <span className='mt-2 block text-sm'>{member.name}</span>
-              <span className='block text-xs text-muted-foreground'>
+              <span className='mt-2 block'>{member.name}</span>
+              <span className='block text-sm text-muted-foreground'>
                 {member.role}
               </span>
             </div>
