@@ -65,15 +65,15 @@ export const MenuItem = ({
 }
 
 export const Menu = ({
-  setActive,
+  // setActive,
   children,
 }: {
-  setActive: (item: string | null) => void
+  // setActive: (item: string | null) => void
   children: React.ReactNode
 }) => {
   return (
     <nav
-      onMouseLeave={() => setActive(null)}
+      // onMouseLeave={() => setActive(null)}
       className='relative flex items-center justify-center rounded-md border border-border bg-background px-8 py-3 shadow-input'
     >
       <Link href={'/'} className='flex items-center gap-2 text-2xl font-semibold'>

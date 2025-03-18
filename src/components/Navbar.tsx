@@ -1,28 +1,24 @@
 'use client'
 
-import React, { useState } from 'react'
-
 import { cn } from '@/utils/util'
 
-import { HoveredLink, Menu, MenuItem } from './NavbarMenu'
+import {  Menu } from './NavbarMenu'
 // import { HoveredLink, Menu, MenuItem, ProductItem } from './NavbarMenu'
 import Link from 'next/link'
 
 export function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null)
+  // const [active, setActive] = useState<string | null>(null)
   return (
     <div
-      className={cn('fixed inset-x-0 z-50 mx-auto max-w-7xl pt-5', className)}
-    >
-      <Menu  setActive={setActive}>
+  className={cn(
+    'fixed inset-x-0 top-0 z-50 mx-auto max-w-7xl pt-5 backdrop-blur-md bg-background/60',
+    className
+  )}
+>
+      <Menu  >
         <Link href={'/'} className='hover:text-primary'>Docs</Link>
-      
-        <MenuItem setActive={setActive} active={active} item='Resources'>
-          <div className='flex flex-col space-y-4 text-sm'>
-            <HoveredLink href='/changelog'>Changelog</HoveredLink>
-            <HoveredLink href='/about'>About</HoveredLink>
-          </div>
-        </MenuItem>
+        <Link href={'/changelog'} className='hover:text-primary'>Changelog</Link>
+        <Link href={'/about'} className='hover:text-primary'>About</Link>
 
         {/* <MenuItem setActive={setActive} active={active} item='Resources'>
           <div className='flex flex-col space-y-4 text-sm'>
