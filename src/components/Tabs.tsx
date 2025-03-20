@@ -1,17 +1,16 @@
 'use client'
 
 import { motion } from 'motion/react'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
 import { cn } from '@/utils/util'
-import { useRouter } from 'next/navigation'
 
 type Tab = {
   title: string
   value: string
   content?: string | React.ReactNode
 }
-
 
 export const Tabs = ({
   tabs: propTabs,
@@ -28,7 +27,7 @@ export const Tabs = ({
 }) => {
   const [active, setActive] = useState<Tab>(propTabs[0])
   const [tabs, setTabs] = useState<Tab[]>(propTabs)
-  const router=useRouter()
+  const router = useRouter()
 
   const moveSelectedTabToTop = (idx: number) => {
     const newTabs = [...propTabs]
@@ -44,10 +43,9 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          'no-visible-scrollbar relative flex w-full max-w-full flex-row items-center justify-center overflow-auto [perspective:1000px] sm:overflow-visible',
+          'no-visible-scrollbar relative flex w-full max-w-full flex-row items-center justify-start overflow-auto [perspective:1000px] sm:justify-center sm:overflow-visible',
           containerClassName,
-        )}
-      >
+        )}>
         {propTabs.map((tab, idx) => (
           <button
             key={tab.title}
@@ -60,8 +58,7 @@ export const Tabs = ({
             className={cn('relative rounded-md px-4 py-2', tabClassName)}
             style={{
               transformStyle: 'preserve-3d',
-            }}
-          >
+            }}>
             {active.value === tab.value && (
               <motion.div
                 layoutId='clickedbutton'
@@ -73,7 +70,7 @@ export const Tabs = ({
               />
             )}
 
-            <span className='relative block text-white'>{tab.title}</span>
+            <span className='relative block'>{tab.title}</span>
           </button>
         ))}
       </div>
@@ -82,7 +79,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn('mt-24', contentClassName)}
+        className={cn('mt-32', contentClassName)}
       />
     </>
   )
@@ -117,8 +114,7 @@ export const FadeInDiv = ({
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn('absolute left-0 top-0 h-full w-full', className)}
-        >
+          className={cn('absolute left-0 top-0 h-full w-full', className)}>
           {tab.content}
         </motion.div>
       ))}

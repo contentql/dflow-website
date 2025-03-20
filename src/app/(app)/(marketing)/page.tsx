@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { FeatureSection } from '@/components/home/cards'
 import ClientSection from '@/components/home/clients'
 import CtaSection from '@/components/home/cta'
