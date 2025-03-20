@@ -1,10 +1,8 @@
-import React from 'react'
-
 import { Button } from '@/components/ui/button'
 
 const CtaSection = () => {
   return (
-    <div className='mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 py-16 text-center'>
+    <div className='mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-4 py-16 text-center md:px-6 lg:px-8'>
       <h1 className='max-w-4xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
         Deploy Smarter with Dokflow
       </h1>

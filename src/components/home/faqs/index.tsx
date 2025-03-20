@@ -42,10 +42,9 @@ export default function FaqSection() {
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index)
   }
-  
 
   return (
-    <div className='mx-auto max-w-7xl p-6 py-20'>
+    <div className='mx-auto max-w-7xl px-4 py-20 md:px-6 lg:px-8'>
       <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text pb-10 text-center text-4xl font-bold text-transparent md:text-7xl'>
         Frequently Asked Questions
       </h1>
@@ -54,8 +53,7 @@ export default function FaqSection() {
           <div key={index} className='rounded-xl p-4 shadow-md'>
             <button
               onClick={() => toggleFAQ(index)}
-              className='flex w-full items-center justify-between text-left text-lg font-medium'
-            >
+              className='flex w-full items-center justify-between text-left text-lg font-medium'>
               {faq.question}
               <ChevronDown
                 className={`transition-transform ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}
@@ -66,8 +64,7 @@ export default function FaqSection() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className='mt-2 text-muted-foreground'
-              >
+                className='mt-2 text-muted-foreground'>
                 {faq.answer}
               </motion.div>
             )}

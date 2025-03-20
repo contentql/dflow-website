@@ -2,8 +2,7 @@
 
 import createGlobe from 'cobe'
 import { Check } from 'lucide-react'
-import React from 'react'
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 import { cn } from '@/utils/util'
 
@@ -18,7 +17,7 @@ export function AboutFeaturesSection() {
 
   return (
     <div className='relative z-20 mx-auto max-w-7xl py-20'>
-      <div className='px-8'>
+      <div className='px-4 md:px-6 lg:px-8'>
         <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Streamline Your Deployments with Ease
         </h1>
@@ -36,7 +35,7 @@ export function AboutFeaturesSection() {
           <FeatureCard key={feature.title} className={feature.className}>
             {/* <FeatureTitle>{feature.title}</FeatureTitle>
             <FeatureDescription>{feature.description}</FeatureDescription> */}
-            <div className='w-full'>
+            <div className='w-full pl-4 md:pl-6 lg:pl-8'>
               <div className='inline-flex bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text pb-3 font-medium text-transparent'>
                 Why Choose Dokflow?
               </div>

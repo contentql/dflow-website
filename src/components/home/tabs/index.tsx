@@ -86,7 +86,7 @@ export function TabsSection() {
   return (
     <div
       id='tabs'
-      className={`relative mx-auto flex h-[20rem] w-full max-w-5xl flex-col items-start justify-start py-28 [perspective:1000px] md:h-[58rem]`}>
+      className={`relative mx-auto flex h-[20rem] w-full max-w-5xl flex-col items-start justify-start px-4 py-28 [perspective:1000px] md:h-[58rem] md:px-6 lg:px-8`}>
       <Tabs tabs={tabs} />
     </div>
   )

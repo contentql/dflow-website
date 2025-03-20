@@ -37,7 +37,7 @@ export function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        'fixed inset-x-0 top-0 z-50 mx-auto max-w-7xl bg-background/60 pt-5 backdrop-blur-md',
+        'fixed inset-x-0 top-0 z-50 mx-auto max-w-7xl bg-background/60 px-4 pt-5 backdrop-blur-md md:px-6 lg:px-8',
         className,
       )}>
       <nav className='relative flex items-center justify-between rounded-md border border-border bg-background px-8 py-3 shadow-input'>

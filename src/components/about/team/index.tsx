@@ -25,8 +25,8 @@ const members = [
 
 export default function TeamSection() {
   return (
-    <section className='py-20'>
-      <div className='mx-auto max-w-7xl px-8 lg:px-0'>
+    <section className='px-4 py-20 md:px-6 lg:px-8'>
+      <div className='mx-auto max-w-7xl'>
         <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
           Meet Our Team
         </h1>

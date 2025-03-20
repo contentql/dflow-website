@@ -36,7 +36,7 @@ export default function TestimonialSection() {
   )
 
   return (
-    <div className='mx-auto max-w-7xl py-20'>
+    <div className='mx-auto max-w-7xl px-4 py-20 md:px-6 lg:px-8'>
       {' '}
       <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text pb-10 text-center text-4xl font-bold text-transparent md:text-7xl'>
         Loved by Developers & Teams
@@ -53,8 +53,7 @@ export default function TestimonialSection() {
                     ? 'bg-sidebar-accent'
                     : 'hover:bg-sidebar-accent'
                 }`}
-                onClick={() => setSelectedTestimonial(testimonial)}
-              >
+                onClick={() => setSelectedTestimonial(testimonial)}>
                 <Image
                   height={1000}
                   width={1000}
@@ -63,7 +62,7 @@ export default function TestimonialSection() {
                   className='h-10 w-10 rounded-full border border-border'
                 />
                 <div>
-                  <p className='font-semibold text-lg'>{testimonial.name}</p>
+                  <p className='text-lg font-semibold'>{testimonial.name}</p>
                   <p className='text-sm text-muted-foreground'>
                     {testimonial.role}
                   </p>

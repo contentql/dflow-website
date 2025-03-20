@@ -1,6 +1,5 @@
 import { Timeline } from '../TimeLine'
 import Image from 'next/image'
-import React from 'react'
 
 export function TimelineSection() {
   const data = [
@@ -150,7 +149,7 @@ export function TimelineSection() {
   ]
 
   return (
-    <div className='mx-auto max-w-7xl'>
+    <div className='mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
       <Timeline data={data} />
     </div>
   )

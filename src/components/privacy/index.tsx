@@ -1,6 +1,6 @@
 const PrivacyPolicySection = () => {
   return (
-    <div className='mx-auto max-w-7xl px-6 pt-20 md:pt-28'>
+    <div className='mx-auto max-w-7xl px-4 pt-20 md:px-6 md:pt-28 lg:px-8'>
       <div className='space-y-6 py-16 md:py-20'>
         <h1 className='mx-auto max-w-5xl bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-3xl font-bold text-transparent sm:text-4xl md:text-6xl'>
           Privacy Policy

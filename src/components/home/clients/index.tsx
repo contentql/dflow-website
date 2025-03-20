@@ -8,7 +8,6 @@ import client_6 from '/public/images/clients/client_6.png'
 import client_7 from '/public/images/clients/client_7.png'
 import client_8 from '/public/images/clients/client_8.png'
 import Image from 'next/image'
-import React from 'react'
 
 const clients = [
   { src: client_1, alt: 'Client 1' },
@@ -23,7 +22,7 @@ const clients = [
 
 const ClientSection = () => {
   return (
-    <div className='mx-auto max-w-7xl px-6 py-20'>
+    <div className='mx-auto max-w-7xl px-4 py-20 md:px-6 lg:px-8'>
       <h2 className='pb-5 text-center text-lg font-semibold'>
         Powering Teams Around the World
       </h2>
