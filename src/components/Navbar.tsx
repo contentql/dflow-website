@@ -1,70 +1,120 @@
 'use client'
 
+import { Menu, Workflow, X } from 'lucide-react'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react'
+
 import { cn } from '@/utils/util'
 
-import {  Menu } from './NavbarMenu'
-// import { HoveredLink, Menu, MenuItem, ProductItem } from './NavbarMenu'
-import Link from 'next/link'
+import { Button } from './ui/button'
 
 export function Navbar({ className }: { className?: string }) {
-  // const [active, setActive] = useState<string | null>(null)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const router = useRouter()
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const closeMenu = (e: MouseEvent) => {
+      const menu = document.getElementById('mobile-menu')
+      const button = document.getElementById('menu-button')
+
+      if (
+        menuOpen &&
+        menu &&
+        button &&
+        !menu.contains(e.target as Node) &&
+        !button.contains(e.target as Node)
+      ) {
+        setMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('click', closeMenu)
+    return () => document.removeEventListener('click', closeMenu)
+  }, [menuOpen])
+
   return (
     <div
-  className={cn(
-    'fixed inset-x-0 top-0 z-50 mx-auto max-w-7xl pt-5 backdrop-blur-md bg-background/60',
-    className
-  )}
->
-      <Menu  >
-        <Link href={'/'} className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>Docs</Link>
-        <Link href={'/changelog'} className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>Changelog</Link>
-        <Link href={'/about'} className='hover:text-primary text-sm font-medium transition duration-150 ease-in-out'>About</Link>
+      className={cn(
+        'fixed inset-x-0 top-0 z-50 mx-auto max-w-7xl bg-background/60 pt-5 backdrop-blur-md',
+        className,
+      )}>
+      <nav className='relative flex items-center justify-between rounded-md border border-border bg-background px-8 py-3 shadow-input'>
+        {/* Logo */}
+        <Link
+          href={'/'}
+          className='flex items-center gap-2 text-2xl font-semibold'>
+          <Workflow className='text-primary' />
+          <p>Dokflow</p>
+        </Link>
 
-        {/* <MenuItem setActive={setActive} active={active} item='Resources'>
-          <div className='flex flex-col space-y-4 text-sm'>
-            <HoveredLink href='/web-dev'>Web Development</HoveredLink>
-            <HoveredLink href='/interface-design'>Interface Design</HoveredLink>
-            <HoveredLink href='/seo'>Search Engine Optimization</HoveredLink>
-            <HoveredLink href='/branding'>Branding</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item='Products'>
-          <div className='grid grid-cols-2 gap-10 p-4 text-sm'>
-            <ProductItem
-              title='Algochurn'
-              href='https://algochurn.com'
-              src='https://assets.aceternity.com/demos/algochurn.webp'
-              description='Prepare for tech interviews like never before.'
-            />
-            <ProductItem
-              title='Tailwind Master Kit'
-              href='https://tailwindmasterkit.com'
-              src='https://assets.aceternity.com/demos/tailwindmasterkit.webp'
-              description='Production ready Tailwind css components for your next project'
-            />
-            <ProductItem
-              title='Moonbeam'
-              href='https://gomoonbeam.com'
-              src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png'
-              description='Never write from scratch again. Go from idea to blog in minutes.'
-            />
-            <ProductItem
-              title='Rogue'
-              href='https://userogue.com'
-              src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png'
-              description='Respond to government RFPs, RFIs and RFQs 10x faster using AI'
-            />
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item='Pricing'>
-          <div className='flex flex-col space-y-4 text-sm'>
-            <HoveredLink href='/hobby'>Hobby</HoveredLink>
-            <HoveredLink href='/individual'>Individual</HoveredLink>
-            <HoveredLink href='/team'>Team</HoveredLink>
-            <HoveredLink href='/enterprise'>Enterprise</HoveredLink>
-          </div>
-        </MenuItem> */}
-      </Menu>
+        {/* Desktop Links */}
+        <div className='hidden flex-1 justify-center gap-5 md:flex'>
+          <Link
+            href={'/'}
+            className='text-sm font-medium transition duration-150 ease-in-out hover:text-primary'>
+            Docs
+          </Link>
+          <Link
+            href={'/changelog'}
+            className='text-sm font-medium transition duration-150 ease-in-out hover:text-primary'>
+            Changelog
+          </Link>
+          <Link
+            href={'/about'}
+            className='text-sm font-medium transition duration-150 ease-in-out hover:text-primary'>
+            About
+          </Link>
+        </div>
+
+        {/* Right Side (Discord + Sign In) */}
+        <div className='hidden items-center gap-2 md:flex'>
+          <Button
+            onClick={() => router.push('https://discord.gg/gKFjGQQQ')}
+            variant={'outline'}
+            className='hover:bg-card hover:text-foreground'>
+            Discord
+          </Button>
+          <Button className='animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
+            Sign in
+          </Button>
+        </div>
+
+        {/* Hamburger Menu (Mobile) */}
+        <button
+          id='menu-button'
+          onClick={() => setMenuOpen(prev => !prev)}
+          className='relative z-50 md:hidden'>
+          {menuOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
+        </button>
+      </nav>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div
+          id='mobile-menu'
+          className='absolute left-0 top-full flex w-full flex-col items-center space-y-4 rounded-md border border-border bg-background p-5 shadow-md md:hidden'>
+          <Link href='/' onClick={() => setMenuOpen(false)}>
+            Docs
+          </Link>
+          <Link href='/changelog' onClick={() => setMenuOpen(false)}>
+            Changelog
+          </Link>
+          <Link href='/about' onClick={() => setMenuOpen(false)}>
+            About
+          </Link>
+          <Button
+            onClick={() => router.push('https://discord.gg/gKFjGQQQ')}
+            variant={'outline'}
+            className='w-full'>
+            Discord
+          </Button>
+          <Button className='w-full animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
+            Sign in
+          </Button>
+        </div>
+      )}
     </div>
   )
 }
