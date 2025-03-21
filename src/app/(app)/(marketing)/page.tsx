@@ -5,6 +5,7 @@ import FaqSection from '@/components/home/faqs'
 import { HeroSection } from '@/components/home/hero'
 import { TabsSection } from '@/components/home/tabs'
 import TestimonialSection from '@/components/home/testimonial'
+import { VideoDialogSection } from '@/components/home/video'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HeroSection />
       <TabsSection />
       <ClientSection />
+      <VideoDialogSection/>
       <FeatureSection />
       <TestimonialSection />
       <FaqSection />
