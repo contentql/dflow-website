@@ -116,7 +116,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
         x: x * 200, // Increase from 100 to 200
         y: y * 200, // Increase from 100 to 200
         z: z * 200, // Increase from 100 to 200
-        scale: 1,
+        scale: 1.5,
         opacity: 1,
         id: i,
       });
@@ -148,7 +148,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
       const screenX = canvasRef.current!.width / 2 + rotatedX;
       const screenY = canvasRef.current!.height / 2 + rotatedY;
 
-      const scale = (rotatedZ + 200) / 300;
+      const scale = (rotatedZ + 300) / 400; // Increased from 300
       const radius = 20 * scale;
       const dx = x - screenX;
       const dy = y - screenY;
