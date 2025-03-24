@@ -1,3 +1,4 @@
+import { AnimatedBeamSection } from '@/components/home/animated-beam'
 import { FeatureSection } from '@/components/home/cards'
 import { ClientSection } from '@/components/home/clients'
 import CtaSection from '@/components/home/cta'
@@ -16,6 +17,7 @@ const HomePage = () => {
       <ClientSection />
       <VideoDialogSection/>
       <FeatureSection />
+      <AnimatedBeamSection/>
       <TestimonialSection />
       <FaqSection />
       <IconCloudSection/>
