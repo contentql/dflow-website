@@ -2,24 +2,34 @@ import Image from 'next/image'
 
 const members = [
   {
-    name: 'Meschac Irung',
-    role: 'Creator',
-    avatar: 'https://avatars.githubusercontent.com/u/47919550?v=4',
+    name: 'Akhil Naidu',
+    role: 'CTO',
+    avatar: '/images/team/akhil.png',
   },
   {
-    name: 'Theo Balick',
+    name: 'Pavan',
+    role: 'Fullstack Dev',
+    avatar: '/images/team/pavan.png',
+  },
+  {
+    name: 'Manikanta',
+    role: 'Fullstack Dev',
+    avatar: '/images/team/manikanta.png',
+  },
+  {
+    name: 'Jagadeesh',
+    role: 'Fullstack Dev',
+    avatar: '/images/team/jagadeesh.png',
+  },
+  {
+    name: 'Lokesh',
     role: 'Frontend Dev',
-    avatar: 'https://avatars.githubusercontent.com/u/68236786?v=4',
+    avatar: '/images/team/lokesh.png',
   },
   {
-    name: 'Glodie Lukose',
+    name: 'Charan',
     role: 'Frontend Dev',
-    avatar: 'https://avatars.githubusercontent.com/u/99137927?v=4',
-  },
-  {
-    name: 'Bernard Ngandu',
-    role: 'Backend Dev',
-    avatar: 'https://avatars.githubusercontent.com/u/31113941?v=4',
+    avatar: '/images/team/charan.png',
   },
 ]
 
