@@ -4,46 +4,39 @@ import React, { useId } from 'react'
 
 const grid = [
   {
-    title: 'Blazing Fast Deployments',
-    description:
-      'Deploy your applications in seconds with our optimized infrastructure, ensuring minimal downtime and maximum efficiency.',
+    "title": "Project Management",
+    "description": "Create and manage projects effortlessly. Deploy projects with a streamlined workflow."
   },
   {
-    title: 'Auto-Scaling',
-    description:
-      'Automatically scale your applications based on traffic demands, ensuring high performance without manual intervention.',
+    "title": "Service Deployment",
+    "description": "Create and manage services within projects. Deploy services with minimal configuration."
   },
   {
-    title: 'Custom Domains & SSL',
-    description:
-      'Easily configure custom domains with free SSL certificates to ensure secure and professional deployments.',
+    "title": "Server Management",
+    "description": "Initialize and configure servers. Manage multiple servers efficiently."
   },
   {
-    title: 'Real-Time Logs & Monitoring',
-    description:
-      'Track deployment status and debug issues with real-time logs, performance metrics, and error tracking.',
+    "title": "Plugins Support",
+    "description": "Extend functionality with plugins. Enable and disable plugins as needed."
   },
   {
-    title: 'GitHub & GitLab Integration',
-    description:
-      'Seamlessly connect your repositories and enable continuous deployment with every push to your GitHub or GitLab repo.',
+    "title": "Domains Management",
+    "description": "Attach and manage custom domains. Configure domain settings easily."
   },
   {
-    title: 'Database & Storage Support',
-    description:
-      'Deploy applications with built-in support for databases like PostgreSQL, MongoDB, and cloud storage solutions.',
+    "title": "Monitoring & Logs",
+    "description": "Track deployment logs and service health. View real-time monitoring stats."
   },
   {
-    title: 'Environment Variables Management',
-    description:
-      'Securely manage and configure environment variables to customize your application across different environments.',
+    "title": "SSH Key Management",
+    "description": "Add and manage SSH keys securely. Enable secure authentication for deployments."
   },
   {
-    title: 'Team Collaboration',
-    description:
-      'Invite team members, manage roles, and collaborate on deployments with fine-grained access control.',
-  },
+    "title": "GitHub Integration",
+    "description": "Deploy applications directly from GitHub repositories. Automate deployments with GitHub Actions."
+  }
 ]
+
 
 export function FeatureSection() {
   return (

@@ -8,32 +8,32 @@ const faqs = [
   {
     question: 'What is Dokflow?',
     answer:
-      'Dokflow is a deployment platform designed for seamless and efficient application hosting.',
+      'Dokflow is a deployment platform that allows users to create projects, manage services, deploy applications, and configure servers with ease. It supports custom domains, monitoring, SSH key management, and GitHub integrations.',
   },
   {
-    question: 'How does Dokflow handle scaling?',
+    question: 'Can I deploy from GitHub?',
     answer:
-      'Dokflow provides auto-scaling features to ensure your application runs smoothly under varying loads.',
+      'Yes! You can connect your GitHub repository to Dokflow and deploy applications directly. The platform supports automated deployments with GitHub Actions.',
   },
   {
-    question: 'Can I deploy custom themes?',
+    question: 'Can I use my own server?',
     answer:
-      'Yes, you can deploy both organization-provided and custom-uploaded themes.',
+      'Yes, you can connect your existing infrastructure and deploy applications to your own server.',
   },
   {
-    question: 'Is there a free tier available?',
+    question: 'Can I add SSH keys?',
     answer:
-      'Dokflow offers a free tier with limited resources, allowing users to test the platform before upgrading.',
+      'Yes, you can add and manage SSH keys for secure access to your servers.',
   },
   {
-    question: 'What types of applications can I deploy?',
+    question: 'Can I use a custom domain?',
     answer:
-      'You can deploy web applications, APIs, and static sites on Dokflow.',
+      'Yes! Dokflow allows you to configure and manage custom domains for your projects.',
   },
   {
-    question: 'Does Dokflow support CI/CD?',
+    question: 'Does Dokflow offer monitoring?',
     answer:
-      'Yes, Dokflow integrates with CI/CD pipelines for automated deployments.',
+      'Yes, real-time monitoring is available to track deployment logs, server health, and application performance.',
   },
 ]
 export default function FaqSection() {
