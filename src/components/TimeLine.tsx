@@ -6,6 +6,7 @@ import React, { useEffect, useRef, useState } from 'react'
 interface TimelineEntry {
   title: string
   content: React.ReactNode
+  date:string
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
@@ -50,9 +51,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className='absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-card md:left-3'>
                 <div className='h-4 w-4 rounded-full border border-border bg-primary p-2' />
               </div>
-              <h3 className='hidden text-xl font-bold text-muted-foreground md:block md:pl-20 md:text-5xl'>
-                {item.title}
-              </h3>
+
+              <div className='md:pl-20'>
+                <h3 className='hidden text-xl font-bold text-muted-foreground md:block md:text-5xl'>
+                  {item.title}
+                </h3>
+                <h4 className='text-muted-foreground'>
+                  {item.date}
+                </h4>
+              </div>
             </div>
 
             <div className='relative w-full pl-20 pr-4 md:pl-4'>
