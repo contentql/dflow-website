@@ -2,14 +2,9 @@
 
 import { motion, useScroll, useTransform } from 'motion/react'
 import React, { useEffect, useRef, useState } from 'react'
+import { allChangelogs } from 'content-collections'
 
-interface TimelineEntry {
-  title: string
-  content: React.ReactNode
-  date:string
-}
-
-export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
+export const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [height, setHeight] = useState(0)
@@ -43,7 +38,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       </div>
 
       <div ref={ref} className='relative mx-auto max-w-7xl pb-20'>
-        {data.map((item, index) => (
+        {[...allChangelogs].reverse().map((item, index) => (
           <div
             key={index}
             className='flex justify-start pt-10 md:gap-10 md:pt-40'>
@@ -54,9 +49,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
               <div className='md:pl-20'>
                 <h3 className='hidden text-xl font-bold text-muted-foreground md:block md:text-5xl'>
-                  {item.title}
+                  {item.version}
                 </h3>
-                <h4 className='text-muted-foreground'>
+                <h4 className='hidden text-muted-foreground md:block'>
                   {item.date}
                 </h4>
               </div>
@@ -64,9 +59,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
             <div className='relative w-full pl-20 pr-4 md:pl-4'>
               <h3 className='mb-4 block text-left text-2xl font-bold text-muted-foreground md:hidden'>
-                {item.title}
+                {item.version}
               </h3>
-              {item.content}{' '}
+              <h4 className='block text-muted-foreground md:hidden'>
+                  {item.date}
+                </h4>
+              <div className='md:prose-xl prose-img:mx-auto prose-img:grid prose-img:grid-cols-2 prose-img:gap-4 prose-img:aspect-video prose-img:w-full prose-gray prose-li:text-muted-foreground prose-img:rounded-md prose-img:object-contain' dangerouslySetInnerHTML={{ __html: item.html }} />
             </div>
           </div>
         ))}
