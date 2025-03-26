@@ -1,8 +1,11 @@
 'use client'
 
+import { MDXContent } from '@content-collections/mdx/react'
+import { allChangelogs } from 'content-collections'
 import { motion, useScroll, useTransform } from 'motion/react'
 import React, { useEffect, useRef, useState } from 'react'
-import { allChangelogs } from 'content-collections'
+
+import GridImages from './GridImages'
 
 export const Timeline = () => {
   const ref = useRef<HTMLDivElement>(null)
@@ -62,9 +65,11 @@ export const Timeline = () => {
                 {item.version}
               </h3>
               <h4 className='block text-muted-foreground md:hidden'>
-                  {item.date}
-                </h4>
-              <div className='md:prose-xl prose-img:mx-auto prose-img:grid prose-img:grid-cols-2 prose-img:gap-4 prose-img:aspect-video prose-img:w-full prose-gray prose-li:text-muted-foreground prose-img:rounded-md prose-img:object-contain' dangerouslySetInnerHTML={{ __html: item.html }} />
+                {item.date}
+              </h4>
+              <div className='prose-gray md:prose-xl prose-li:text-muted-foreground prose-img:mx-auto prose-img:aspect-video prose-img:w-full prose-img:rounded-md prose-img:object-contain'>
+                <MDXContent components={{ GridImages }} code={item.mdx} />
+              </div>
             </div>
           </div>
         ))}

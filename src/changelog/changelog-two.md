@@ -19,5 +19,5 @@ date: "24 March, 2025"
 - Track deployment logs and service health.
 - View real-time monitoring stats.
 
-![Server Management](/images/changelog/servers.png)
-![Monitoring Logs](/images/changelog/logs.png)
+<GridImages imagePaths={['/images/changelog/servers.png', '/images/changelog/logs.png']} />
+

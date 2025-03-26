@@ -27,5 +27,4 @@ date: "10 March, 2025"
 - Deploy applications directly from GitHub repositories.
 - Automate deployments with GitHub Actions.
 
-![Server Management](/images/changelog/dashboard.png)
-![Monitoring Logs](/images/changelog/git.png)
+<GridImages imagePaths={['/images/changelog/dashboard.png', '/images/changelog/git.png','/images/changelog/plugins.png','/images/changelog/ssh.png']} />
