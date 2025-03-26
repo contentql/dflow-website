@@ -111,7 +111,7 @@ export function Navbar({ className }: { className?: string }) {
             Discord
           </Button>
           <Button className='w-full animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
-            Sign in
+            Get Started
           </Button>
         </div>
       )}
