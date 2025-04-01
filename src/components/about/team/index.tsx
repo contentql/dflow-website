@@ -2,6 +2,11 @@ import Image from 'next/image'
 
 const members = [
   {
+    name: 'Amar',
+    role: 'Founder',
+    avatar: '/images/team/amar.png',
+  },
+  {
     name: 'Akhil Naidu',
     role: 'CTO',
     avatar: '/images/team/akhil.png',
