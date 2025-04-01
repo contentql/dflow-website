@@ -16,6 +16,7 @@ export const metadata = {
   title: 'Dokflow',
   description:
     'Dokflow simplifies deployment with powerful tools for server management, database hosting, GitHub app deployment, domain configuration, and real-time logging. Manage everything in one place with efficiency and ease.',
+  image: '/public/images/og.png',
 }
 
 export default function RootLayout({
