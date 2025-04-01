@@ -12,6 +12,20 @@ import { Tabs } from '@/components/Tabs'
 export function TabsSection() {
   const tabs = [
     {
+      title: 'Services',
+      value: 'Services',
+      content: (
+        <div className='relative h-full w-full overflow-hidden rounded-md bg-gradient-to-br from-purple-700 to-violet-900 p-10'>
+          {/* <p className='text-xl font-bold md:text-4xl'>Servers</p> */}
+          <p className='text-lg'>
+            Explore a suite of services designed to enhance your deployment
+            workflow.
+          </p>
+          <DummyContent src='/images/tab/services.webm' />
+        </div>
+      ),
+    },
+    {
       title: 'Servers',
       value: 'Servers',
       content: (
@@ -93,7 +107,18 @@ export function TabsSection() {
 }
 
 const DummyContent = ({ src }: { src?: StaticImageData | string }) => {
-  return (
+  return src === '/images/tab/services.webm' ? (
+    <video
+      src={typeof src === 'string' ? src : (src as StaticImageData).src}
+      autoPlay
+      loop
+      muted
+      playsInline
+      width='1000'
+      height='1000'
+      className='absolute inset-x-0 -bottom-10 mx-auto h-[60%] w-[90%] rounded-xl object-cover object-left-top md:h-[90%]'
+    />
+  ) : (
     <Image
       src={typeof src === 'string' ? src : src!} // Extract `src` if it's StaticImageData
       alt='dummy image'
