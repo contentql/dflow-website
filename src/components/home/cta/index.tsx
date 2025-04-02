@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
 
 const CtaSection = () => {
@@ -13,8 +15,12 @@ const CtaSection = () => {
         Effortless, fast, and reliable deployments for modern applications. Get
         started today and streamline your development workflow.
       </p>
-      <Button className='animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
-        Get started
+      <Button
+        asChild
+        className='animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
+        <Link href={'https://demo.dflow.sh'} target='_blank'>
+          View Demo
+        </Link>
       </Button>
     </div>
   )

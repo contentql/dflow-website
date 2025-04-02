@@ -76,8 +76,12 @@ export function Navbar({ className }: { className?: string }) {
             className='hover:bg-card hover:text-foreground'>
             Discord
           </Button>
-          <Button className='animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
-            Get Started
+          <Button
+            asChild
+            className='animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
+            <Link href={'https://demo.dflow.sh'} target='_blank'>
+              View Demo
+            </Link>
           </Button>
         </div>
 
@@ -110,8 +114,12 @@ export function Navbar({ className }: { className?: string }) {
             className='w-full'>
             Discord
           </Button>
-          <Button className='w-full animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
-            Get Started
+          <Button
+            asChild
+            className='w-full animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
+            <Link href={'https://demo.dflow.sh'} target='_blank'>
+              View Demo
+            </Link>
           </Button>
         </div>
       )}
