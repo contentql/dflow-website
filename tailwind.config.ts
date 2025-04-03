@@ -1,8 +1,10 @@
+import typography from '@tailwindcss/typography'
+import { createPreset } from 'fumadocs-ui/tailwind-plugin'
 import type { Config } from 'tailwindcss'
 import tailwindAnimate from 'tailwindcss-animate'
-import typography from "@tailwindcss/typography";
 
 const config: Config = {
+  presets: [createPreset()],
   darkMode: ['class'],
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,6 +12,9 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/blocks/**/*.{js,ts,jsx,tsx,mdx}',
     './src/payload/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/fumadocs-ui/dist/**/*.js',
+    './content/**/*.mdx',
+    './mdx-components.tsx',
   ],
   theme: {
     container: {
@@ -127,27 +132,26 @@ const config: Config = {
             backgroundPosition: '-200% 0',
           },
         },
-		marquee: {
-			from: { transform: "translateX(0)" },
-			to: { transform: "translateX(calc(-100% - var(--gap)))" },
-		  },
-		  "marquee-vertical": {
-			from: { transform: "translateY(0)" },
-			to: { transform: "translateY(calc(-100% - var(--gap)))" },
-		  },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+        },
+        'marquee-vertical': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(calc(-100% - var(--gap)))' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         spotlight: 'spotlight 2s ease .75s 1 forwards',
         shimmer: 'shimmer 2s linear infinite',
-		marquee: "marquee var(--duration) linear infinite",
-        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-      
+        marquee: 'marquee var(--duration) linear infinite',
+        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
       },
     },
   },
-  plugins: [tailwindAnimate,typography],
+  plugins: [tailwindAnimate, typography],
 }
 
 export default config

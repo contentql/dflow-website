@@ -52,7 +52,7 @@ export function Navbar({ className }: { className?: string }) {
         {/* Desktop Links */}
         <div className='hidden flex-1 justify-center gap-5 md:flex'>
           <Link
-            href={'/'}
+            href={'/docs'}
             className='text-sm font-medium transition duration-150 ease-in-out hover:text-primary'>
             Docs
           </Link>
