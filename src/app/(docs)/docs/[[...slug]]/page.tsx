@@ -6,9 +6,10 @@ import { notFound } from 'next/navigation'
 export default async function Page({
   params,
 }: {
-  params: { slug?: string[] }
+  params: Promise<{ slug?: string[] }>
 }) {
-  const page = getPage(params.slug)
+  const resolvedParams = await params
+  const page = getPage(resolvedParams.slug)
 
   if (page == null) {
     notFound()
@@ -37,8 +38,13 @@ export async function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }: { params: { slug?: string[] } }) {
-  const page = getPage(params.slug)
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug?: string[] }>
+}) {
+  const resolvedParams = await params
+  const page = getPage(resolvedParams.slug)
 
   if (page == null) notFound()
 
