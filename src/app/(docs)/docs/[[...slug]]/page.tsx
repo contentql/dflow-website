@@ -29,6 +29,11 @@ export default async function Page({
       toc={page.data.exports.toc}
       full={page.data.full}
       lastUpdate={lastUpdate}
+      editOnGithub={{
+        owner: 'contentql',
+        repo: 'dflow-website',
+        path: `/content/docs/${page.file.path}?plain=1`,
+      }}
       tableOfContent={{
         style: 'clerk',
       }}>
@@ -58,7 +63,7 @@ export async function generateMetadata({
   if (page == null) notFound()
 
   return {
-    title: page.data.title,
+    title: `${page.data.title} | Dflow`,
     description: page.data.description,
   } satisfies Metadata
 }
