@@ -1,5 +1,10 @@
 import { getPage, getPages } from '../source'
-import { DocsBody, DocsPage } from 'fumadocs-ui/page'
+import {
+  DocsBody,
+  DocsDescription,
+  DocsPage,
+  DocsTitle,
+} from 'fumadocs-ui/page'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
@@ -28,7 +33,8 @@ export default async function Page({
         style: 'clerk',
       }}>
       <DocsBody>
-        <h1>{page.data.title}</h1>
+        <DocsTitle>{page.data.title}</DocsTitle>
+        <DocsDescription>{page.data.description}</DocsDescription>
         <MDX />
       </DocsBody>
     </DocsPage>

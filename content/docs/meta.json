@@ -1,5 +1,13 @@
 {
   "title": "docs",
+  "description": "Documentation for DFlow",
+  "keywords": ["dflow", "documentation", "docs"],
+  "icon": "https://dflow.sh/favicon.png",
   "root": true,
-  "pages": ["index", "[Changelog](https://dflow.sh/changelog)"]
+  "pages": [
+    "---Introduction---",
+    "index",
+    "architecture",
+    "[Changelog](https://dflow.sh/changelog)"
+  ]
 }
