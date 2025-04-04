@@ -17,10 +17,13 @@ export default async function Page({
 
   const MDX = page.data.exports.default
 
+  const lastUpdate = page.data.exports.lastModified
+
   return (
     <DocsPage
       toc={page.data.exports.toc}
       full={page.data.full}
+      lastUpdate={lastUpdate}
       tableOfContent={{
         style: 'clerk',
       }}>

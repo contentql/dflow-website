@@ -1,7 +1,11 @@
 import { withContentCollections } from '@content-collections/next'
 import createMDX from 'fumadocs-mdx/config'
 
-const withMDX = createMDX()
+const withMDX = createMDX({
+  mdxOptions: {
+    lastModifiedTime: 'git',
+  },
+})
 
 const nextConfig = {
   /* config options here */
