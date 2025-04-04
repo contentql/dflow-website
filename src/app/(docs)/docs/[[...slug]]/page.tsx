@@ -1,3 +1,4 @@
+import { Rate } from '../../components/rate'
 import { getPage, getPages } from '../source'
 import {
   DocsBody,
@@ -7,6 +8,7 @@ import {
 } from 'fumadocs-ui/page'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import posthog from 'posthog-js'
 
 export default async function Page({
   params,
@@ -41,6 +43,13 @@ export default async function Page({
         <DocsTitle>{page.data.title}</DocsTitle>
         <DocsDescription>{page.data.description}</DocsDescription>
         <MDX />
+        <Rate
+          onRateAction={async (url, feedback) => {
+            'use server'
+
+            posthog.capture('on_rate_docs', feedback)
+          }}
+        />
       </DocsBody>
     </DocsPage>
   )
