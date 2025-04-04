@@ -1,4 +1,4 @@
-import { Rate } from '../../components/rate'
+import { Feedback } from '../../components/Feedback'
 import { getPage, getPages } from '../source'
 import {
   DocsBody,
@@ -43,7 +43,7 @@ export default async function Page({
         <DocsTitle>{page.data.title}</DocsTitle>
         <DocsDescription>{page.data.description}</DocsDescription>
         <MDX />
-        <Rate
+        <Feedback
           onRateAction={async (url, feedback) => {
             'use server'
 

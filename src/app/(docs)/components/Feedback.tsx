@@ -41,7 +41,7 @@ function set(url: string, feedback: Feedback | null) {
   else localStorage.removeItem(key)
 }
 
-export function Rate({
+export function Feedback({
   onRateAction,
 }: {
   onRateAction: (url: string, feedback: Feedback) => Promise<void>
