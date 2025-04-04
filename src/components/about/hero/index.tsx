@@ -6,7 +6,7 @@ const AboutHeroSection = () => {
           Deploy Smarter, Scale Faster
         </h1>
         <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
-          Dokflow simplifies website and application deployment, making it
+          Dflow simplifies website and application deployment, making it
           seamless, efficient, and scalable. Whether you`&apos;`re launching a
           startup or managing enterprise-level deployments, we provide the tools
           to deploy with confidence—faster and smarter than ever.

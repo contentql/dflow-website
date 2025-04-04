@@ -4,45 +4,52 @@ import React, { useId } from 'react'
 
 const grid = [
   {
-    "title": "Project Management",
-    "description": "Create and manage projects effortlessly. Deploy projects with a streamlined workflow."
+    title: 'Project Management',
+    description:
+      'Create and manage projects effortlessly. Deploy projects with a streamlined workflow.',
   },
   {
-    "title": "Service Deployment",
-    "description": "Create and manage services within projects. Deploy services with minimal configuration."
+    title: 'Service Deployment',
+    description:
+      'Create and manage services within projects. Deploy services with minimal configuration.',
   },
   {
-    "title": "Server Management",
-    "description": "Initialize and configure servers. Manage multiple servers efficiently."
+    title: 'Server Management',
+    description:
+      'Initialize and configure servers. Manage multiple servers efficiently.',
   },
   {
-    "title": "Plugins Support",
-    "description": "Extend functionality with plugins. Enable and disable plugins as needed."
+    title: 'Plugins Support',
+    description:
+      'Extend functionality with plugins. Enable and disable plugins as needed.',
   },
   {
-    "title": "Domains Management",
-    "description": "Attach and manage custom domains. Configure domain settings easily."
+    title: 'Domains Management',
+    description:
+      'Attach and manage custom domains. Configure domain settings easily.',
   },
   {
-    "title": "Monitoring & Logs",
-    "description": "Track deployment logs and service health. View real-time monitoring stats."
+    title: 'Monitoring & Logs',
+    description:
+      'Track deployment logs and service health. View real-time monitoring stats.',
   },
   {
-    "title": "SSH Key Management",
-    "description": "Add and manage SSH keys securely. Enable secure authentication for deployments."
+    title: 'SSH Key Management',
+    description:
+      'Add and manage SSH keys securely. Enable secure authentication for deployments.',
   },
   {
-    "title": "GitHub Integration",
-    "description": "Deploy applications directly from GitHub repositories. Automate deployments with GitHub Actions."
-  }
+    title: 'GitHub Integration',
+    description:
+      'Deploy applications directly from GitHub repositories. Automate deployments with GitHub Actions.',
+  },
 ]
-
 
 export function FeatureSection() {
   return (
     <div className='mx-auto max-w-7xl px-4 py-20 md:px-6 lg:px-8'>
       <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text pb-10 text-center text-4xl font-bold text-transparent md:text-7xl'>
-        Why Choose Dokflow?
+        Why Choose Dflow?
       </h1>
       <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-4'>
         {grid.map((feature, index) => (

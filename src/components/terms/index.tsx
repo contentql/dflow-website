@@ -34,17 +34,17 @@ const sections = [
   {
     title: '1. Acceptance of Terms',
     content:
-      'By using Dokflow, you acknowledge that you have read, understood, and agree to these Terms. If you do not agree, please do not use our services.',
+      'By using Dflow, you acknowledge that you have read, understood, and agree to these Terms. If you do not agree, please do not use our services.',
   },
   {
     title: '2. Changes to Terms',
     content:
-      'We may update these Terms periodically. Continued use of Dokflow after changes constitutes acceptance of the updated Terms.',
+      'We may update these Terms periodically. Continued use of Dflow after changes constitutes acceptance of the updated Terms.',
   },
   {
     title: '3. Use of Our Services',
     content: [
-      'You must be at least [minimum age] years old to use Dokflow.',
+      'You must be at least [minimum age] years old to use Dflow.',
       'You agree not to misuse our services, engage in illegal activities, or violate the rights of others.',
     ],
   },
@@ -58,21 +58,21 @@ const sections = [
   {
     title: '5. Intellectual Property',
     content: [
-      'All content, logos, and trademarks on Dokflow are owned by us or our licensors.',
+      'All content, logos, and trademarks on Dflow are owned by us or our licensors.',
       'You may not copy, distribute, or modify any content without permission.',
     ],
   },
   {
     title: '6. Limitation of Liability',
     content: [
-      'We are not liable for any damages resulting from your use of Dokflow.',
+      'We are not liable for any damages resulting from your use of Dflow.',
       'Our services are provided "as is" without warranties of any kind.',
     ],
   },
   {
     title: '7. Termination',
     content:
-      'We reserve the right to suspend or terminate your access to Dokflow if you violate these Terms.',
+      'We reserve the right to suspend or terminate your access to Dflow if you violate these Terms.',
   },
   {
     title: '8. Contact Us',

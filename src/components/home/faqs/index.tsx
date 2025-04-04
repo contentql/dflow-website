@@ -6,14 +6,14 @@ import { useState } from 'react'
 
 const faqs = [
   {
-    question: 'What is Dokflow?',
+    question: 'What is Dflow?',
     answer:
-      'Dokflow is a deployment platform that allows users to create projects, manage services, deploy applications, and configure servers with ease. It supports custom domains, monitoring, SSH key management, and GitHub integrations.',
+      'Dflow is a deployment platform that allows users to create projects, manage services, deploy applications, and configure servers with ease. It supports custom domains, monitoring, SSH key management, and GitHub integrations.',
   },
   {
     question: 'Can I deploy from GitHub?',
     answer:
-      'Yes! You can connect your GitHub repository to Dokflow and deploy applications directly. The platform supports automated deployments with GitHub Actions.',
+      'Yes! You can connect your GitHub repository to Dflow and deploy applications directly. The platform supports automated deployments with GitHub Actions.',
   },
   {
     question: 'Can I use my own server?',
@@ -28,10 +28,10 @@ const faqs = [
   {
     question: 'Can I use a custom domain?',
     answer:
-      'Yes! Dokflow allows you to configure and manage custom domains for your projects.',
+      'Yes! Dflow allows you to configure and manage custom domains for your projects.',
   },
   {
-    question: 'Does Dokflow offer monitoring?',
+    question: 'Does Dflow offer monitoring?',
     answer:
       'Yes, real-time monitoring is available to track deployment logs, server health, and application performance.',
   },

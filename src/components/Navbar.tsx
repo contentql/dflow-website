@@ -46,7 +46,7 @@ export function Navbar({ className }: { className?: string }) {
           href={'/'}
           className='flex items-center gap-2 text-2xl font-semibold'>
           <Workflow className='text-primary' />
-          <p>Dokflow</p>
+          <p>Dflow</p>
         </Link>
 
         {/* Desktop Links */}

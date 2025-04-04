@@ -2,7 +2,7 @@
 
 import createGlobe from 'cobe'
 import { Check } from 'lucide-react'
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 export function AboutFeaturesSection() {
   return (
@@ -11,7 +11,7 @@ export function AboutFeaturesSection() {
         {/* Left Content */}
         <div className='max-w-lg'>
           <h2 className='bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text pb-3 text-3xl font-semibold text-transparent'>
-            Why Choose Dokflow?
+            Why Choose Dflow?
           </h2>
           <ul className='space-y-5 text-lg text-gray-200'>
             {[
@@ -21,7 +21,9 @@ export function AboutFeaturesSection() {
               'Reduce manual effort with streamlined deployment pipelines.',
               'Works with your favorite tools and frameworks.',
             ].map((text, index) => (
-              <li key={index} className='flex items-center justify-center gap-3 md:justify-start'>
+              <li
+                key={index}
+                className='flex items-center justify-center gap-3 md:justify-start'>
                 <Check className='text-purple-500' />
                 {text}
               </li>
@@ -31,7 +33,7 @@ export function AboutFeaturesSection() {
 
         {/* Right Globe */}
         <div className='flex w-full max-w-[400px] justify-center md:max-w-[500px] lg:max-w-[600px]'>
-          <Globe className='w-full h-auto' />
+          <Globe className='h-auto w-full' />
         </div>
       </div>
     </div>
@@ -77,7 +79,12 @@ export const Globe = ({ className }: { className?: string }) => {
   return (
     <canvas
       ref={canvasRef}
-      style={{ width: '100%', height: 'auto', maxWidth: '600px', aspectRatio: 1 }}
+      style={{
+        width: '100%',
+        height: 'auto',
+        maxWidth: '600px',
+        aspectRatio: 1,
+      }}
       className={className}
     />
   )

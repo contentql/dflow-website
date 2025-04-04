@@ -1,4 +1,5 @@
 import { Timeline } from '../TimeLine'
+
 export function TimelineSection() {
   // const data = [
   //   {
@@ -7,7 +8,7 @@ export function TimelineSection() {
   //     content: (
   //       <div>
   //         <p className='mb-6 text-xl font-semibold'>
-  //           Introducing <span className='text-primary'>Dokflow v0.2</span> – now
+  //           Introducing <span className='text-primary'>Dflow v0.2</span> – now
   //           with enhanced server management, plugin support, and real-time
   //           monitoring.
   //         </p>
@@ -66,7 +67,7 @@ export function TimelineSection() {
   //       <div>
   //         <p className='mb-6 text-xl font-semibold'>
   //           Introducing the first release of{' '}
-  //           <span className='text-primary'>Dokflow</span> – your efficient and
+  //           <span className='text-primary'>Dflow</span> – your efficient and
   //           scalable deployment solution.
   //         </p>
 

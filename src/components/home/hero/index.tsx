@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import React from 'react'
 
 import { Spotlight } from '@/components/SpotLight'
 import { Button } from '@/components/ui/button'
@@ -30,7 +29,7 @@ export function HeroSection() {
           Effortless <br /> Deployments in Minutes
         </h1>
         <p className='mx-auto mt-4 max-w-lg text-base font-normal text-muted-foreground sm:text-lg'>
-          Deploy your applications seamlessly with Dokflow. Fast, scalable, and
+          Deploy your applications seamlessly with Dflow. Fast, scalable, and
           developer-friendly.
         </p>
         <div>

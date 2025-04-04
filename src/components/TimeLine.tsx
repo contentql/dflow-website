@@ -3,7 +3,7 @@
 import { MDXContent } from '@content-collections/mdx/react'
 import { allChangelogs } from 'content-collections'
 import { motion, useScroll, useTransform } from 'motion/react'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import GridImages from './GridImages'
 
@@ -31,11 +31,11 @@ export const Timeline = () => {
     <div className='w-full pt-28' ref={containerRef}>
       <div className='mx-auto max-w-7xl px-4 py-20 md:px-8 lg:px-10'>
         <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl'>
-          Stay Up to Date with Dokflow
+          Stay Up to Date with Dflow
         </h1>
         <p className='mx-auto mt-4 max-w-lg text-center text-lg text-muted-foreground'>
           Stay informed about the latest updates, new features, performance
-          improvements, and bug fixes in Dokflow. We’re constantly improving to
+          improvements, and bug fixes in Dflow. We’re constantly improving to
           make your deployments seamless!
         </p>
       </div>
