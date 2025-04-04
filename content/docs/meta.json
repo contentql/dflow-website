@@ -2,7 +2,6 @@
   "title": "docs",
   "description": "Documentation for DFlow",
   "keywords": ["dflow", "documentation", "docs"],
-  "icon": "https://dflow.sh/favicon.png",
   "root": true,
   "pages": [
     "---Introduction---",
@@ -10,6 +9,9 @@
     "architecture",
     "---Setup---",
     "installation",
+    "---Server---",
+    "sshKeys",
+    "(Git-Sources)",
     "[Changelog](https://dflow.sh/changelog)"
   ]
 }
