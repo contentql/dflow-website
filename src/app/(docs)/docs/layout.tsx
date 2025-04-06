@@ -9,7 +9,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
   return (
     <DocsLayout
       tree={pageTree}
-      nav={{ title: <NavTitle />, url: '/docs' }}
+      nav={{ title: <NavTitle />, url: '/' }}
       links={[
         {
           icon: <Globe className='h-4 w-4' />,
