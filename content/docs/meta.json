@@ -10,7 +10,7 @@
     "---Setup---",
     "installation",
     "---Cloud---",
-    "dflow-cloud",
+    "providers",
     "monitoring",
     "---Server---",
     "sshKeys",
