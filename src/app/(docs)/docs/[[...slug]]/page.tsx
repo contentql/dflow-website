@@ -1,5 +1,6 @@
 import { Feedback } from '../../components/Feedback'
 import { getPage, getPages } from '../source'
+import defaultMdxComponents from 'fumadocs-ui/mdx'
 import {
   DocsBody,
   DocsDescription,
@@ -30,6 +31,12 @@ export default async function Page({
     <DocsPage
       toc={page.data.exports.toc}
       full={page.data.full}
+      breadcrumb={{
+        enabled: true,
+        full: true,
+        includeSeparator: true,
+        //   includeRoot: true,
+      }}
       lastUpdate={lastUpdate}
       editOnGithub={{
         owner: 'contentql',
@@ -41,8 +48,10 @@ export default async function Page({
       }}>
       <DocsBody>
         <DocsTitle>{page.data.title}</DocsTitle>
-        <DocsDescription>{page.data.description}</DocsDescription>
-        <MDX />
+        <DocsDescription className='-mt-4 text-base'>
+          {page.data.description}
+        </DocsDescription>
+        <MDX components={{ ...defaultMdxComponents }} />
         <Feedback
           onRateAction={async (url, feedback) => {
             'use server'
