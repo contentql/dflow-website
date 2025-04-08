@@ -1,6 +1,6 @@
 'use client'
 
-import Logo from '../../public/images/dFlow-no-bg.png'
+import Logo from '../../public/images/dFlow.png'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'

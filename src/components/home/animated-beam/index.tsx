@@ -1,6 +1,6 @@
 'use client'
 
-import Logo from '../../../../public/images/dFlow-no-bg.png'
+import Logo from '../../../../public/images/dFlow.png'
 import Image from 'next/image'
 import React, { forwardRef, useRef } from 'react'
 
