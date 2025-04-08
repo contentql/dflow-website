@@ -11,6 +11,7 @@
     "installation",
     "---Cloud---",
     "providers",
+    "aws",
     "monitoring",
     "---Server---",
     "sshKeys",
