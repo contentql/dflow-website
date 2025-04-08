@@ -7,7 +7,30 @@ dFlow let's you connect to your AWS account and manage your cloud resources
 without leaving the dFlow interface. You can create, update, and delete
 resources, as well as view their status and logs.
 
-## Create IAM Role
+## Connect your AWS account
+
+To connect your AWS account, follow these steps:
+
+1. Go to the [**Integrations**](https://demo.dflow.sh/integrations) section in
+   dFlow.
+2. Click on the **Settings** button on the AWS card.
+3. Click on the **Connect Account** button.
+4. Enter a name for your AWS account.
+5. Enter the **Access key ID** and **Secret access key** you copied earlier. You
+   can obtain these keys from the AWS IAM console. If you don't have an access
+   key, you can create one by following the instructions in the
+   [Create IAM Role](#create-iam-role) section.
+
+<Callout type='info'>
+  Both the **Access key ID** and **Secret access key** are encrypted before
+  being stored in our database. This means that even if someone gains access to
+  our database, they won't be able to see your AWS credentials.
+</Callout>
+6. Click on the **Save** button.
+
+Your AWS account is now connected to dFlow 🎉.
+
+### Create IAM Role
 
 dFlow requires an IAM(Identity and Access Management) role to access your AWS
 account. This role must have permissions to create and manage resources in your
@@ -41,22 +64,12 @@ Follow these steps to create an IAM role with the necessary permissions:
   your existing EC2 instances and manage them from dFlow.
 </Callout>
 
-## Connect your AWS account
-
-To connect your AWS account, follow these steps:
-
-1. Go to the **Integrations** section in dFlow.
-2. Click on the **Settings** button on the AWS card.
-3. Click on the **Connect Account** button.
-4. Enter a name for your AWS account.
-5. Enter the **Access key ID** and **Secret access key** you copied earlier.
-6. Click on the **Save** button.
-
-## Create EC2 instance
+### Create EC2 instance
 
 To create an EC2 instance, follow these steps:
 
-1. Go to the **Servers** section in dFlow.
+1. Go to the [**Servers**](https://demo.dflow.sh/settings/servers) section in
+   dFlow.
 2. Click on the **Add Server** button.
 3. Select **AWS** as the provider.
 4. Give name and optional description to your server.
