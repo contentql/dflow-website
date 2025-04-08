@@ -1,6 +1,8 @@
 'use client'
 
-import { Menu, Workflow, X } from 'lucide-react'
+import Logo from '../../public/images/dflow-no-bg.png'
+import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -45,7 +47,7 @@ export function Navbar({ className }: { className?: string }) {
         <Link
           href={'/'}
           className='flex items-center gap-2 text-2xl font-semibold'>
-          <Workflow className='text-primary' />
+          <Image src={Logo} alt={'Dflow Logo'} height={40} width={40} />
           <p>Dflow</p>
         </Link>
 
