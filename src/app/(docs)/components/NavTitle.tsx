@@ -1,9 +1,10 @@
-import { Workflow } from 'lucide-react'
+import Logo from '../../../../public/images/dflow-no-bg.png'
+import Image from 'next/image'
 
 export const NavTitle = () => {
   return (
     <div className='flex items-center gap-x-2 text-2xl font-semibold'>
-      <Workflow className='stroke-2 text-[#7F55E2]' />
+      <Image src={Logo} alt='dFlow Logo' height={40} width={40} />
       Dflow
     </div>
   )
