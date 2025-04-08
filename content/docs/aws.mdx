@@ -3,28 +3,26 @@ title: AWS
 description: Connect your AWS account and manage your cloud resources.
 ---
 
-dFlow let's you connect to your AWS account and manage your cloud resources
-without leaving the dFlow interface. You can create, update, and delete
-resources, as well as view their status and logs.
+dFlow lets you connect your AWS account and manage your cloud infrastructure
+directly from the dFlow interface. You can create, update, and delete resources,
+as well as monitor their status and logs—all in one place.
 
 ## Connect your AWS account
 
 To connect your AWS account, follow these steps:
 
-1. Go to the [**Integrations**](https://demo.dflow.sh/integrations) section in
+1. Navigate to [**Integrations**](https://demo.dflow.sh/integrations) section in
    dFlow.
 2. Click on the **Settings** button on the AWS card.
 3. Click on the **Connect Account** button.
 4. Enter a name for your AWS account.
-5. Enter the **Access key ID** and **Secret access key** you copied earlier. You
-   can obtain these keys from the AWS IAM console. If you don't have an access
-   key, you can create one by following the instructions in the
-   [Create IAM Role](#create-iam-role) section.
+5. Provide your **Access key ID** and **Secret access key**.  
+   You can generate these in the AWS IAM console. If you don’t have them yet,
+   see the [Create IAM Role](#create-iam-role) section below.
 
 <Callout type='info'>
-  Both the **Access key ID** and **Secret access key** are encrypted before
-  being stored in our database. This means that even if someone gains access to
-  our database, they won't be able to see your AWS credentials.
+  Your AWS credentials are encrypted before being stored. Even in the unlikely
+  event of a data breach, your credentials remain secure.
 </Callout>
 6. Click on the **Save** button.
 
@@ -39,8 +37,8 @@ create a new role or use the existing one, make sure to attach the necessary
 policies to it. The following policies are required:
 
 <Callout type='info'>
-  **EC2FullAccess**: This policy allows dFlow to create and manage EC2
-  instances.
+  <strong>Required Policy:</strong> <code>AmazonEC2FullAccess</code> — Grants
+  dFlow permission to create and manage EC2 instances.
 </Callout>
 
 Follow these steps to create an IAM role with the necessary permissions:
@@ -56,24 +54,26 @@ Follow these steps to create an IAM role with the necessary permissions:
 9. Click on the user you just created.
 10. Click on **Create access key**.
 11. Select **Other** and click **next**.
-12. Add **optional description** and click **Create access key**.
-13. Copy the **Access key ID** and **Secret access key**.
+12. (Optional) Add a description, then click **Create access key**.
+13. Copy the **Access key ID** and **Secret access key**—you'll need these to
+    connect your account to dFlow.
 
 <Callout type='warn'>
-  Currently dFlow only allows you to create EC2 instances, soon you can connect
-  your existing EC2 instances and manage them from dFlow.
+  Currently, dFlow supports creating new EC2 instances only. Support for
+  managing existing instances is coming soon.
 </Callout>
 
 ### Create EC2 instance
 
-To create an EC2 instance, follow these steps:
+Once your AWS account is connected, you can launch EC2 instances. To create an
+EC2 instance, follow these steps:
 
 1. Go to the [**Servers**](https://demo.dflow.sh/settings/servers) section in
    dFlow.
 2. Click on the **Add Server** button.
 3. Select **AWS** as the provider.
 4. Give name and optional description to your server.
-5. Select your AWS account from the dropdown.
+5. 5. Choose your connected AWS account.
 6. Select **Amazon Machine Image (AMI)**.
 7. Select the **Instance Type**.
 8. Select **Disk Size**.
