@@ -1,6 +1,6 @@
 'use client'
 
-import Logo from '../../public/images/dflow-no-bg.png'
+import Logo from '../../public/images/dFlow-no-bg.png'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -47,8 +47,8 @@ export function Navbar({ className }: { className?: string }) {
         <Link
           href={'/'}
           className='flex items-center gap-2 text-2xl font-semibold'>
-          <Image src={Logo} alt={'Dflow Logo'} height={40} width={40} />
-          <p>Dflow</p>
+          <Image src={Logo} alt={'dFlow Logo'} height={40} width={40} />
+          <p>dFlow</p>
         </Link>
 
         {/* Desktop Links */}
@@ -81,7 +81,7 @@ export function Navbar({ className }: { className?: string }) {
           <Button
             asChild
             className='animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
-            <Link href={'https://demo.dflow.sh'} target='_blank'>
+            <Link href={'https://demo.dFlow.sh'} target='_blank'>
               View Demo
             </Link>
           </Button>
@@ -119,7 +119,7 @@ export function Navbar({ className }: { className?: string }) {
           <Button
             asChild
             className='w-full animate-shimmer bg-[linear-gradient(110deg,#6B44C2,45%,#7F55E2,55%,#6B44C2)] bg-[length:200%_100%]'>
-            <Link href={'https://demo.dflow.sh'} target='_blank'>
+            <Link href={'https://demo.dFlow.sh'} target='_blank'>
               View Demo
             </Link>
           </Button>

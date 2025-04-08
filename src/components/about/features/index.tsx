@@ -11,7 +11,7 @@ export function AboutFeaturesSection() {
         {/* Left Content */}
         <div className='max-w-lg'>
           <h2 className='bg-gradient-to-r from-purple-500 to-purple-200 bg-clip-text pb-3 text-3xl font-semibold text-transparent'>
-            Why Choose Dflow?
+            Why Choose dFlow?
           </h2>
           <ul className='space-y-5 text-lg text-gray-200'>
             {[

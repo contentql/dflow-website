@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata = {
-  title: 'Dflow',
+  title: 'dFlow',
   description:
-    'Dflow simplifies deployment with powerful tools for server management, database hosting, GitHub app deployment, domain configuration, and real-time logging. Manage everything in one place with efficiency and ease.',
+    'dFlow simplifies deployment with powerful tools for server management, database hosting, GitHub app deployment, domain configuration, and real-time logging. Manage everything in one place with efficiency and ease.',
   image: '/public/images/og.png',
 }
 

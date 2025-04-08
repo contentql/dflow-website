@@ -1,7 +1,7 @@
 {
   "title": "docs",
   "description": "Documentation for DFlow",
-  "keywords": ["dflow", "documentation", "docs"],
+  "keywords": ["dFlow", "documentation", "docs"],
   "root": true,
   "pages": [
     "---Introduction---",
@@ -15,6 +15,6 @@
     "---Server---",
     "sshKeys",
     "(Git-Sources)",
-    "[Changelog](https://dflow.sh/changelog)"
+    "[Changelog](https://dFlow.sh/changelog)"
   ]
 }

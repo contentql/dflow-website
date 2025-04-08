@@ -14,7 +14,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
         {
           icon: <Globe className='h-4 w-4' />,
           text: 'Website',
-          url: 'https://dflow.sh',
+          url: 'https://dFlow.sh',
         },
         {
           icon: (
@@ -31,7 +31,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
           url: 'https://discord.gg/QHeXmUd5',
         },
       ]}
-      githubUrl='https://github.com/akhil-naidu/dflow'
+      githubUrl='https://github.com/akhil-naidu/dFlow'
       sidebar={{
         collapsible: true,
         prefetch: false,

@@ -12,7 +12,7 @@ const testimonials = [
     role: 'Fullstack Developer',
     image: '/images/team/girish.png',
     title: 'Effortless Deployment!',
-    text: 'Dflow has completely transformed how we deploy our applications. The GitHub integration is seamless, and the real-time logs make debugging a breeze!',
+    text: 'dFlow has completely transformed how we deploy our applications. The GitHub integration is seamless, and the real-time logs make debugging a breeze!',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const testimonials = [
     role: 'Fullstack Developer',
     image: '/images/team/pavan.png',
     title: 'Best Platform for Managing Services!',
-    text: 'Managing multiple services used to be a nightmare, but Dflow has simplified everything. The UI is intuitive, and the automation features save us so much time.',
+    text: 'Managing multiple services used to be a nightmare, but dFlow has simplified everything. The UI is intuitive, and the automation features save us so much time.',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const testimonials = [
     role: 'Frontend Lead',
     image: 'https://randomuser.me/api/portraits/men/20.jpg',
     title: 'Reliable and Scalable!',
-    text: 'We needed a deployment solution that could scale with our growing business, and Dflow delivered. The monitoring tools are fantastic, and server management is effortless!',
+    text: 'We needed a deployment solution that could scale with our growing business, and dFlow delivered. The monitoring tools are fantastic, and server management is effortless!',
   },
 ]
 

@@ -3,7 +3,7 @@ version: 'v0.2'
 date: '24 March, 2025'
 ---
 
-#### Introducing Dflow v0.2 Now with enhanced server management, plugin support, and real-time monitoring.
+#### Introducing dFlow v0.2 Now with enhanced server management, plugin support, and real-time monitoring.
 
 ### ✨ Key Features
 

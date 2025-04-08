@@ -40,7 +40,7 @@ export default async function Page({
       lastUpdate={lastUpdate}
       editOnGithub={{
         owner: 'contentql',
-        repo: 'dflow-website',
+        repo: 'dFlow-website',
         path: `/content/docs/${page.file.path}?plain=1`,
       }}
       tableOfContent={{
@@ -81,7 +81,7 @@ export async function generateMetadata({
   if (page == null) notFound()
 
   return {
-    title: `${page.data.title} | Dflow`,
+    title: `${page.data.title} | dFlow`,
     description: page.data.description,
   } satisfies Metadata
 }

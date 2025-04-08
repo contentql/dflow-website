@@ -46,7 +46,7 @@ export default function TeamSection() {
           Meet Our Team
         </h1>
         <p className='mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground'>
-          Behind Dflow is a team of passionate developers, designers, and
+          Behind dFlow is a team of passionate developers, designers, and
           innovators dedicated to simplifying deployments. We believe in
           efficiency, scalability, and seamless workflows—helping you bring your
           projects to life with ease.

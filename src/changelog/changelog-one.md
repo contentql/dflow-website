@@ -3,7 +3,7 @@ version: 'v0.1'
 date: '10 March, 2025'
 ---
 
-#### Introducing the first release of Dflow – your efficient and scalable deployment solution.
+#### Introducing the first release of dFlow – your efficient and scalable deployment solution.
 
 ### ✨ Key Features
 

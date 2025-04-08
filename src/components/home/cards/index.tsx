@@ -49,7 +49,7 @@ export function FeatureSection() {
   return (
     <div className='mx-auto max-w-7xl px-4 py-20 md:px-6 lg:px-8'>
       <h1 className='bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text pb-10 text-center text-4xl font-bold text-transparent md:text-7xl'>
-        Why Choose Dflow?
+        Why Choose dFlow?
       </h1>
       <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-5 lg:grid-cols-4'>
         {grid.map((feature, index) => (
