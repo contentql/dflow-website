@@ -1,7 +1,7 @@
-import NavTitle from '../components/NavTitle'
 import { DocsLayout } from 'fumadocs-ui/layout'
 import { Globe } from 'lucide-react'
 import type { ReactNode } from 'react'
+import NavTitle from '../components/NavTitle'
 
 import { pageTree } from './source'
 
@@ -28,7 +28,7 @@ export default function RootDocsLayout({ children }: { children: ReactNode }) {
             </svg>
           ),
           text: 'Discord',
-          url: 'https://discord.gg/QHeXmUd5',
+          url: 'https://discord.gg/5w7JUQYaAD',
         },
       ]}
       githubUrl='https://github.com/akhil-naidu/dFlow'

@@ -42,7 +42,7 @@ export function HeroSection() {
               </Link>
             </Button>
             <Button
-              onClick={() => router.push('https://discord.gg/gKFjGQQQ')}
+              onClick={() => router.push('https://discord.gg/5w7JUQYaAD')}
               variant='outline'
               className='flex items-center gap-2 hover:bg-card hover:text-foreground'>
               <svg

@@ -1,11 +1,11 @@
 'use client'
 
-import Logo from '../../public/images/dFlow.png'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import Logo from '../../public/images/dFlow.png'
 
 import { cn } from '@/utils/util'
 
@@ -73,7 +73,7 @@ export function Navbar({ className }: { className?: string }) {
         {/* Right Side (Discord + Sign In) */}
         <div className='hidden items-center gap-2 md:flex'>
           <Button
-            onClick={() => router.push('https://discord.gg/gKFjGQQQ')}
+            onClick={() => router.push('https://discord.gg/5w7JUQYaAD')}
             variant={'outline'}
             className='hover:bg-card hover:text-foreground'>
             Discord
@@ -111,7 +111,7 @@ export function Navbar({ className }: { className?: string }) {
             About
           </Link>
           <Button
-            onClick={() => router.push('https://discord.gg/gKFjGQQQ')}
+            onClick={() => router.push('https://discord.gg/5w7JUQYaAD')}
             variant={'outline'}
             className='w-full'>
             Discord
